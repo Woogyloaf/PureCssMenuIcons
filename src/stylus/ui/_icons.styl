@@ -1,0 +1,54 @@
+// ***********************************
+// PURE CSS ICONS
+// ***********************************
+
+.icon-cross
+	width wh = 50px 
+	height wh
+	position relative
+	margin 0
+	padding 0
+	&:focus
+		outline none
+	input
+		display none
+	label
+		width wh
+		height 7px
+		top 19px
+		display block
+		position absolute
+		cursor pointer
+		border none
+		display block
+		font-size 0
+		border-radius br = 5px
+		text-indent -9999
+		transition-duration .5s
+		&:before
+		&:after
+			width wh
+			height 7px
+			background #3498db
+			position absolute
+			top 0
+			display block
+			content ''
+			border-radius br
+			transform rotate(45deg)
+			transition-duration .5s
+		&:after
+			top 0
+			transform rotate(-45deg)
+	input:checked +	label
+		background #3498db
+		width wh
+		&:after
+			top 19px
+			transform rotate(0deg)
+			transition-duration .5s
+		&:before
+			top -19px
+			transform rotate(0deg)
+			transition-duration .5s
+			
