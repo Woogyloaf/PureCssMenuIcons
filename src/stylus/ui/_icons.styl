@@ -3,6 +3,11 @@
 // ***********************************
 
 .icon-cross
+.icon-arrow-left
+.icon-arrow-right
+.icon-horizontal
+	margin 0 auto!important
+.icon-cross
 	width wh = 50px 
 	height wh
 	position relative
@@ -21,6 +26,7 @@
 		cursor pointer
 		border none
 		display block
+		// background bg = #f09
 		font-size 0
 		border-radius br = 5px
 		text-indent -9999
@@ -52,3 +58,184 @@
 			transform rotate(0deg)
 			transition-duration .5s
 			
+
+// ***********************************
+// ICON ARROW LEFT
+// ***********************************
+.icon-arrow-left
+	width wh = 50px 
+	height wh
+	position relative
+	margin 0
+	padding 0
+	&:focus
+		outline none
+	input
+		display none
+	label
+		width wh
+		height 7px
+		top 19px
+		display block
+		position absolute
+		cursor pointer
+		border none
+		display block
+		font-size 0
+		background bg = #3498db
+		border-radius br = 5px
+		text-indent -9999
+		transition-duration .5s
+		&:before
+		&:after
+			width wh - (wh - 50%)
+			height 7px
+			background bg
+			position absolute
+			display block
+			content ''
+			border-radius br
+			transition-duration .5s
+		&:before
+			left -2px
+			top -7px
+			transform rotate(-45deg)
+		&:after
+			top 7px
+			left -2px
+			transform rotate(45deg)
+	input:checked +	label
+		background #3498db
+		width wh
+		&:after
+			top 19px
+		&:before
+			top -19px
+		&:after
+		&:before
+			left 0px
+			width wh
+			transition-duration .5s
+			transform rotate(0deg)
+			
+
+
+// ***********************************
+// ICON ARROW RIGHT
+// ***********************************
+.icon-arrow-right
+	width wh = 50px 
+	height wh
+	position relative
+	margin 0
+	padding 0
+	&:focus
+		outline none
+	input
+		display none
+	label
+		width wh
+		height 7px
+		top 19px
+		display block
+		position absolute
+		cursor pointer
+		border none
+		display block
+		font-size 0
+		background bg = #3498db
+		border-radius br = 5px
+		text-indent -9999
+		transition-duration .5s
+		&:before
+		&:after
+			width wh - (wh - 50%)
+			height 7px
+			background bg
+			position absolute
+			display block
+			content ''
+			border-radius br
+			transition-duration .5s
+		&:before
+			right -2px
+			top -7px
+			transform rotate(45deg)
+		&:after
+			top 7px
+			right -2px
+			transform rotate(-45deg)
+	input:checked +	label
+		background #3498db
+		width wh
+		&:after
+			top 19px
+		&:before
+			top -19px
+		&:after
+		&:before
+			right 0px
+			width wh
+			transition-duration .5s
+			transform rotate(0deg)
+
+
+
+
+// ***********************************
+// ICON HORIZONTAL MENU
+// ***********************************
+.icon-horizontal
+	width wh = 50px 
+	height wh
+	position relative
+	margin 0
+	padding 0
+	&:focus
+		outline none
+	input
+		display none
+	label
+		width wh
+		height 7px
+		top 19px
+		display block
+		position absolute
+		cursor pointer
+		border none
+		display block
+		font-size 0
+		background bg = #3498db + green
+		border-radius br = 5px
+		text-indent -9999
+		transition-duration .5s
+		transform rotate(90deg)
+		&:before
+		&:after
+			width wh - (wh - 50%)
+			height 7px
+			background bg
+			position absolute
+			display block
+			content ''
+			border-radius br
+			transition-duration .5s
+		&:before
+		&:after
+			width wh
+			height 7px
+			background bg
+			position absolute
+			display block
+			content ''
+			border-radius br
+			transition-duration .5s
+		&:after
+			top -22px
+		&:before
+			top 22px
+	input:checked +	label
+		background #3498db
+		width wh
+		transition-duration .5s
+		transform rotate(0deg)
